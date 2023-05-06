@@ -1,0 +1,11 @@
+{   "version": 2,
+    "builds": [{
+        "src": "vercel_exemplo/templates/vercel_exemplo/index.html",
+        "use": "@vercel/python"
+    }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "djangoVercel/wsgi.py"
+        }    ]
+}
